@@ -386,6 +386,21 @@
         </ul> 
     </div>
 
+    <div class="footer-form">
+        <h2 class="social-title mail-title">
+            Подпишитесь на рассылку
+        </h2>
+        <form class="small-form">
+            <input name="user email" type="email" placeholder="E-mail" class="footer-input">
+            <button type="submit" class="button-hero footer-button">Подписаться             <svg width="24px" height="24px" class="icon-email">
+                <use href=./images/icons.svg#icon-send>
+                
+                </use>
+            </svg></button>
+
+        </form>
+    </div>
+
 </div>
     </footer>
     <div class="backdrop is-hidden" data-modal>
@@ -398,11 +413,29 @@
             <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
             <form class="modal-form">
                 <label class="modal-label" for="user-name">Имя</label>
+            <div class="input-svg">
                 <input name="user-name" class="modal-input" type="text" required id="user-name">
+                <svg width="18px" height="18px" class="modal-icon">
+                    <use href=./images/icons.svg#icon-person-black>
+                    </use>
+                </svg>
+            </div>
                 <label class="modal-label" for="user-tel">Телефон</label>
+            <div class="input-svg">
                 <input name="user-tel" class="modal-input" type="tel" required id="user-tel">
+                <svg width="18px" height="18px" class="modal-icon">
+                    <use href=./images/icons.svg#icon-phone-black>
+                    </use>
+                </svg>
+            </div>
                 <label class="modal-label" for="user-mail">Почта</label>
+            <div class="input-svg">
                 <input name="user-mail" class="modal-input" type="email" id="user-mail">
+                <svg width="18px" height="18px" class="modal-icon">
+                    <use href=./images/icons.svg#icon-email-black>
+                    </use>
+                </svg>
+            </div>
                 <label class="modal-label" for="user-text">Комментарий</label>
                 <textarea name="user-text" placeholder="Введите текст" class="modal-input modal-input-text" id="user-text"></textarea>
                 <button class="button-hero" type="submit">Отправить</button>

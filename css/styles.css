@@ -282,9 +282,10 @@ color: #212121;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
     outline: none;
+    padding-left: 30px;
 }
 
-.modal-input:not(:last-child) {
+.input-svg:not(:last-child) {
     margin-bottom: 10px;
 }
 
@@ -314,6 +315,16 @@ display: block;
 margin-bottom: 4px;
 }
 
+.input-svg {
+    position: relative;
+}
+
+.modal-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+}
 /* ----OUR ADVANTAGES---- */
 
 .advantage {
@@ -596,6 +607,10 @@ margin-bottom: 20px;
 
 }
 
+.mail-title {
+    margin-bottom: 20px;
+}
+
 .social-link-footer {
     width: 44px;
     height: 44px;
@@ -611,6 +626,9 @@ margin-bottom: 20px;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.footer-form {
+margin-left: 93px;
+}
 
 .social-icon-footer {
     fill: currentColor;
@@ -620,6 +638,38 @@ margin-bottom: 20px;
     background-color: #2196F3;
 }
 
+.small-form {
+    display: flex;
+
+}
+
+.footer-input {
+    width: 358px;
+    height: 50px;
+    font-size: 16px;
+    line-height: 1.25;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: ;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+border-radius: 4px;
+background-color: transparent;
+margin-right: 12px;
+padding-left: 16px;
+}
+
+.footer-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-email {
+margin-left: 10px;
+}
 /* ----PORTFOLIO---- */
 
 .portfolio-section {
