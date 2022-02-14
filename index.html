@@ -438,7 +438,11 @@
             </div>
                 <label class="modal-label" for="user-text">Комментарий</label>
                 <textarea name="user-text" placeholder="Введите текст" class="modal-input modal-input-text" id="user-text"></textarea>
-                <button class="button-hero" type="submit">Отправить</button>
+                <div class="">
+                    <input type="checkbox" class="modal-check visually-hidden" id="modal-check" name="modal-check">
+                    <label for="modal-check" class="modal-check-text"> Соглашаюсь с рассылкой и принимаю <a class="license" href=""> Условия договора</a></label>
+                </div>
+                <button class="button-hero button-submit" type="submit">Отправить</button>
             </form>
         </div>
     </div>

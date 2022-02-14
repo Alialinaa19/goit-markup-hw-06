@@ -234,19 +234,7 @@ border: transparent;
     pointer-events: none;
     visibility: hidden;
 }
-.modal {
-    min-width: 528px;
-    min-height: 581px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
-border-radius: 4px;
 
-position: absolute;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%) scale(1);
-transition: transform 500ms;
-}
 
 .close {
     background: #FFFFFF;
@@ -265,7 +253,6 @@ right: 8px;
 .modal-title {
     padding-left: 40px;
     padding-right: 40px;
-    padding-top: 40px;
 
 font-style: normal;
 font-weight: bold;
@@ -274,6 +261,13 @@ line-height: 1.15;
 text-align: center;
 
 color: #212121;
+margin-bottom: 12px;
+}
+
+.button-submit {
+margin: 0 auto;
+display: block;
+margin-top: 30px;
 }
 
 .modal-input {
@@ -283,6 +277,17 @@ color: #212121;
     border-radius: 4px;
     outline: none;
     padding-left: 30px;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-input:focus {
+    border-color: var(--accent-color);
+}
+
+.modal-input:focus + .modal-icon {
+    fill: var(--accent-color);
 }
 
 .input-svg:not(:last-child) {
@@ -296,14 +301,54 @@ color: #212121;
     padding-bottom: 12px;
     height: 120px;
     resize: none;
+    margin-bottom: 10px;
 }
 
+.modal-check-text {
+font-size: 14px;
+line-height: 1.71;
+color: #757575;
+display: flex;
+align-items: center;
+}
+
+
+.modal-check-text::before {
+    content: "";
+    width: 16px;
+    height: 15px;
+    border: 2px solid #212121;
+    border-radius: 2px;
+    display: block;
+    margin-right: 8.38px;
+    outline: none;
+    transition-property: background-image;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal-check:checked + .modal-check-text::before {
+    background-image: url(../images/icon-check.svg);
+    border: none;
+}
 .modal-input-text::placeholder {
 font-size: 12px;
 line-height: 1.16;
 letter-spacing: 0.01em;
 
 color: rgba(117, 117, 117, 0.5);
+}
+
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
 }
 
 .modal-label {
@@ -324,6 +369,31 @@ margin-bottom: 4px;
     left: 12px;
     top: 50%;
     transform: translateY(-50%);
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal {
+    width: 528px;
+    height: 581px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+border-radius: 4px;
+
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%) scale(1);
+transition: transform 500ms;
+
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 40px;
+}
+.license {
+    color: var(--accent-color);
+    text-decoration-line: underline;
+    padding-left: 3px;
 }
 /* ----OUR ADVANTAGES---- */
 
